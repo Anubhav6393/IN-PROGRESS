@@ -1,0 +1,50 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: "Poppins", sans-serif;
+}
+
+body {
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: rgb(3, 215, 252);
+background: linear-gradient(to bottom left, rgb(3, 215, 252) 0%, rgba(135,206,235,0) 100%);
+
+}
+
+.center {
+   text-align: center;
+   padding: 23px;
+}
+
+.text {
+   font-size: 4.3rem;
+   color: black;
+   cursor: pointer;
+   position: relative; 
+   animation: riseUp 1s ease-in-out; 
+   transition: transform 0.5s, color 0.5s; 
+   border: 5px solid rgba(115, 207, 235, 0.9);
+   border-radius: 10px;
+   padding: 10px;
+}
+
+@keyframes riseUp {
+   from {
+       opacity: 0;
+       transform: translateY(100vh); 
+   }
+   to {
+       opacity: 1;
+       transform: translateY(0); 
+   }
+}
+
+.text:hover {
+   transform: scale(1.2);
+   color: rgba(3, 173, 252, 0.9); /
+   
+}
